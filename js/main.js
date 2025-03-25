@@ -12846,7 +12846,16 @@ __webpack_require__.r(__webpack_exports__);
 const listener = () => {
   document.body.addEventListener('click', e => {
     let target = e.target;
+    if (target.dataset.openModal) openModal(target);
+    if (target.dataset.modalClose || target.classList.contains('modal')) {
+      document.querySelector('.modal.active').classList.remove('active');
+    }
   });
+  function openModal(t) {
+    const id = t.dataset.openModal;
+    const modal = document.getElementById(id);
+    modal.classList.add('active');
+  }
 };
 listener();
 
