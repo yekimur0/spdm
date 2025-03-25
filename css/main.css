@@ -3531,3 +3531,11 @@ html.with-fancybox body.hide-scrollbar {
 .modal.success .online-block {
   width: 100%;
 }
+
+@media(max-height: 550px) {
+  .modal__container {
+    height: 100%;
+    overflow: auto;
+  }
+    
+}
