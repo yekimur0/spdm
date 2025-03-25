@@ -2999,7 +2999,7 @@ html.with-fancybox body.hide-scrollbar {
   color: var(--dark-blue);
 }
 .steps .item .image {
-  padding: 30%;
+  padding: 26%;
 }
 .steps .item .image img {
   position: absolute;
